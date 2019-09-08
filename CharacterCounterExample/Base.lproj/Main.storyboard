@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CharacterCounterExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Osl-mo-mwZ">
+                                <rect key="frame" x="87" y="65" width="240" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="textFieldWithCounterAccessoryView"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wLp-qm-3OB">
+                                <rect key="frame" x="87" y="121" width="240" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="textViewWithCounterAccessoryView"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NLB-8p-ZUJ">
+                                <rect key="frame" x="87" y="196" width="240" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="textFieldWithoutCounterAccessoryView"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lh4-ca-xdd">
+                                <rect key="frame" x="87" y="256" width="240" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="textViewWithoutCounterAccessoryView"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="4Bz-fb-QOB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NLB-8p-ZUJ" firstAttribute="leading" secondItem="lh4-ca-xdd" secondAttribute="leading" id="8Fn-64-OBW"/>
+                            <constraint firstItem="Osl-mo-mwZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="Eca-Na-O6f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lh4-ca-xdd" secondAttribute="bottom" constant="563" id="G8w-BV-AuI"/>
+                            <constraint firstItem="wLp-qm-3OB" firstAttribute="trailing" secondItem="NLB-8p-ZUJ" secondAttribute="trailing" id="JhK-2H-kAx"/>
+                            <constraint firstItem="lh4-ca-xdd" firstAttribute="top" secondItem="NLB-8p-ZUJ" secondAttribute="bottom" constant="30" id="NgL-Gr-Cna"/>
+                            <constraint firstItem="wLp-qm-3OB" firstAttribute="leading" secondItem="NLB-8p-ZUJ" secondAttribute="leading" id="QZd-ZM-fTe"/>
+                            <constraint firstItem="NLB-8p-ZUJ" firstAttribute="top" secondItem="wLp-qm-3OB" secondAttribute="bottom" constant="27" id="RJV-A4-RJe"/>
+                            <constraint firstItem="NLB-8p-ZUJ" firstAttribute="trailing" secondItem="lh4-ca-xdd" secondAttribute="trailing" id="U6s-xk-trW"/>
+                            <constraint firstItem="Osl-mo-mwZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="UuC-Xa-p6R"/>
+                            <constraint firstItem="Osl-mo-mwZ" firstAttribute="trailing" secondItem="wLp-qm-3OB" secondAttribute="trailing" id="eJG-Op-wYf"/>
+                            <constraint firstItem="wLp-qm-3OB" firstAttribute="top" secondItem="Osl-mo-mwZ" secondAttribute="bottom" constant="26" id="hsG-6c-H3n"/>
+                            <constraint firstItem="Osl-mo-mwZ" firstAttribute="leading" secondItem="wLp-qm-3OB" secondAttribute="leading" id="qlO-GA-1aP"/>
+                            <constraint firstItem="Osl-mo-mwZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tJ0-46-1bx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldWithCounterAccessoryView" destination="Osl-mo-mwZ" id="1Rq-Hd-2i0"/>
+                        <outlet property="textFieldWithoutAccessoryView" destination="NLB-8p-ZUJ" id="ehJ-eg-D7V"/>
+                        <outlet property="textViewWithCounterAccessoryView" destination="wLp-qm-3OB" id="6jA-zX-GFn"/>
+                        <outlet property="textViewWithoutAccessoryView" destination="lh4-ca-xdd" id="H5o-3k-9fy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="70.982142857142847"/>
+        </scene>
+    </scenes>
+</document>
