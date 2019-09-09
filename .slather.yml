@@ -1,0 +1,7 @@
+coverage_service: cobertura_xml
+xcodeproj: CharacterCounter.xcodeproj
+scheme: CharacterCounter
+output_directory: reports
+ignore:
+  - CharacterCounterExampleUITests/*
+  - CharacterCounterExample/*
