@@ -1,0 +1,11 @@
+language: swift
+
+osx_image: xcode10.2
+env:
+  matrix:
+    - TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone XR'
+    - TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone 7'
+
+script:
+  - set -o pipefail && xcodebuild -scheme CharacterCounter -project CharacterCounter.xcodeproj build
+  - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project CharacterCounter.xcodeproj -scheme CharacterCounterExample -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
