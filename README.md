@@ -1,6 +1,6 @@
 # CharacterCounter
 
-[![CI Status](https://img.shields.io/travis/Javal Nanda/CharacterCounter.svg?style=flat)](https://travis-ci.org/Javal Nanda/CharacterCounter)
+[![CI Status](https://img.shields.io/travis/javalnanda/CharacterCounter.svg?style=flat)](https://travis-ci.org/javalnanda/CharacterCounter)
 [![Version](https://img.shields.io/cocoapods/v/CharacterCounter.svg?style=flat)](https://cocoapods.org/pods/CharacterCounter)
 [![License](https://img.shields.io/cocoapods/l/CharacterCounter.svg?style=flat)](https://cocoapods.org/pods/CharacterCounter)
 [![Platform](https://img.shields.io/cocoapods/p/CharacterCounter.svg?style=flat)](https://cocoapods.org/pods/CharacterCounter)
