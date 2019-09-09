@@ -6,10 +6,13 @@ env:
     - OS=12.2 NAME='iPhone XR'
     - OS=12.2 NAME='iPhone 7'
 
+before_install:
+  - gem install slather
+
 script:
   - set -o pipefail && xcodebuild -scheme CharacterCounter -project CharacterCounter.xcodeproj build
   - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project CharacterCounter.xcodeproj -scheme CharacterCounterExample -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
 
-  after_success:
+after_success:
   - slather
   - bash <(curl -s https://codecov.io/bash) -f reports/cobertura.xml -X coveragepy -X gcov -X xcode

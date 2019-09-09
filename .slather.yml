@@ -4,4 +4,3 @@ scheme: CharacterCounter
 output_directory: reports
 ignore:
   - CharacterCounterExampleUITests/*
-  - CharacterCounterExample/*
