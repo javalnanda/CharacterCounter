@@ -13,12 +13,19 @@ To run the example project, clone the repo, and run the target CharacterCounterE
 
 ## Installation
 
-CharacterCounter is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+CharacterCounter is available through [CocoaPods](https://cocoapods.org) and [Carthage](https://github.com/Carthage/Carthage). 
 
-```ruby
-pod 'CharacterCounter'
-```
+### CocoaPods
+
+1. Add a pod entry for CharacterCounter to your Podfile `pod 'CharacterCounter', '~> 1.0'`
+2. Install the pod(s) by running `pod install`.
+3. Include CharacterCounter wherever you need it with `#import CharacterCounter"`.
+
+### Carthage
+
+1. Add CharacterCounter to your Cartfile. e.g., `github "javalnanda/CharacterCounter" ~> 1.0`
+2. Run `carthage update`
+3. Follow the rest of the [standard Carthage installation instructions](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) to add CharacterCounter to your project.
 
 ## Usage
 
