@@ -21,6 +21,10 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Osl-mo-mwZ">
                                 <rect key="frame" x="87" y="65" width="240" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="textFieldWithCounterAccessoryView"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LWw-4d-d7S"/>
+                                    <constraint firstAttribute="width" constant="240" id="Zxh-UI-Z0w"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -29,12 +33,20 @@
                                 <rect key="frame" x="87" y="121" width="240" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration" identifier="textViewWithCounterAccessoryView"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="N7G-hO-V46"/>
+                                    <constraint firstAttribute="height" constant="48" id="kkq-cE-SSj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NLB-8p-ZUJ">
                                 <rect key="frame" x="87" y="196" width="240" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="textFieldWithoutCounterAccessoryView"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="JoZ-wx-jJa"/>
+                                    <constraint firstAttribute="height" constant="30" id="XMT-5i-7Wc"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -44,7 +56,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration" identifier="textViewWithoutCounterAccessoryView"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="4Bz-fb-QOB"/>
+                                    <constraint firstAttribute="height" constant="43" id="3L2-Mt-FgK"/>
+                                    <constraint firstAttribute="width" constant="240" id="TOv-Gr-sFy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -52,19 +65,14 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="NLB-8p-ZUJ" firstAttribute="leading" secondItem="lh4-ca-xdd" secondAttribute="leading" id="8Fn-64-OBW"/>
-                            <constraint firstItem="Osl-mo-mwZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="Eca-Na-O6f"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lh4-ca-xdd" secondAttribute="bottom" constant="563" id="G8w-BV-AuI"/>
-                            <constraint firstItem="wLp-qm-3OB" firstAttribute="trailing" secondItem="NLB-8p-ZUJ" secondAttribute="trailing" id="JhK-2H-kAx"/>
-                            <constraint firstItem="lh4-ca-xdd" firstAttribute="top" secondItem="NLB-8p-ZUJ" secondAttribute="bottom" constant="30" id="NgL-Gr-Cna"/>
-                            <constraint firstItem="wLp-qm-3OB" firstAttribute="leading" secondItem="NLB-8p-ZUJ" secondAttribute="leading" id="QZd-ZM-fTe"/>
-                            <constraint firstItem="NLB-8p-ZUJ" firstAttribute="top" secondItem="wLp-qm-3OB" secondAttribute="bottom" constant="27" id="RJV-A4-RJe"/>
-                            <constraint firstItem="NLB-8p-ZUJ" firstAttribute="trailing" secondItem="lh4-ca-xdd" secondAttribute="trailing" id="U6s-xk-trW"/>
-                            <constraint firstItem="Osl-mo-mwZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="UuC-Xa-p6R"/>
-                            <constraint firstItem="Osl-mo-mwZ" firstAttribute="trailing" secondItem="wLp-qm-3OB" secondAttribute="trailing" id="eJG-Op-wYf"/>
-                            <constraint firstItem="wLp-qm-3OB" firstAttribute="top" secondItem="Osl-mo-mwZ" secondAttribute="bottom" constant="26" id="hsG-6c-H3n"/>
-                            <constraint firstItem="Osl-mo-mwZ" firstAttribute="leading" secondItem="wLp-qm-3OB" secondAttribute="leading" id="qlO-GA-1aP"/>
-                            <constraint firstItem="Osl-mo-mwZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tJ0-46-1bx"/>
+                            <constraint firstItem="wLp-qm-3OB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2Jw-nq-9Ih"/>
+                            <constraint firstItem="Osl-mo-mwZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ai7-2i-k83"/>
+                            <constraint firstItem="lh4-ca-xdd" firstAttribute="top" secondItem="NLB-8p-ZUJ" secondAttribute="bottom" constant="30" id="Ic5-lB-q6d"/>
+                            <constraint firstItem="lh4-ca-xdd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LMi-Qa-Sah"/>
+                            <constraint firstItem="wLp-qm-3OB" firstAttribute="top" secondItem="Osl-mo-mwZ" secondAttribute="bottom" constant="26" id="Tzu-Xv-zfB"/>
+                            <constraint firstItem="NLB-8p-ZUJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fdz-k8-jGT"/>
+                            <constraint firstItem="NLB-8p-ZUJ" firstAttribute="top" secondItem="wLp-qm-3OB" secondAttribute="bottom" constant="27" id="hwi-x1-w8l"/>
+                            <constraint firstItem="Osl-mo-mwZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="m0f-xm-pdM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
